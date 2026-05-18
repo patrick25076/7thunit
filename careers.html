@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Careers - 7th Unit</title>
+    <meta name="description" content="Join 7th Unit and build humanoid robots for industrial work.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Literata:opsz,wght@7..72,300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=20260518-nav-footer">
+    <script src="/assets/js/main.js?v=20260518-nav-footer" defer></script>
+</head>
+<body>
+    <header class="nav" aria-label="Primary navigation">
+        <div class="nav__inner">
+            <a class="nav__brand" href="/index.html">7TH UNIT</a>
+            <button class="nav__toggle" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+                <span class="nav__toggle-bar"></span>
+            </button>
+            <nav class="nav__panel" data-nav-menu data-open="false">
+                <ul class="nav__links">
+                    <li><a class="nav__link" href="/product.html">Product</a></li>
+                    <li><a class="nav__link" href="/about.html">About</a></li>
+                    <li><a class="nav__link" href="/careers.html" aria-current="page">Careers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="careers-hero">
+            <div class="container careers-hero__inner">
+                <p class="eyebrow eyebrow--accent fade-up" data-revealed="true">Join us</p>
+                <h1 class="display fade-up" data-revealed="true">Build the robot.</h1>
+                <p class="lede fade-up" data-revealed="true">We are a humanoid robotics company engineering the foundation for generalized physical intelligence. We focus on rigorous engineering, material science, and control theory. If you are driven by solving the hardest problems in robotics with a team that values precision over noise, join us.</p>
+            </div>
+        </section>
+
+        <section class="careers-roles">
+            <div class="container careers-roles__inner">
+                <p class="careers-roles__head eyebrow fade-up">Open positions</p>
+                <div class="role-list fade-up">
+                    <a class="role-card" href="#apply">
+                        <span>
+                            <span class="role-card__title">Robotics Systems Engineer</span>
+                            <span class="role-card__meta">San Francisco, CA</span>
+                        </span>
+                        <span class="role-card__arrow">-&gt;</span>
+                    </a>
+                    <a class="role-card" href="#apply">
+                        <span>
+                            <span class="role-card__title">Lead Control Theorist</span>
+                            <span class="role-card__meta">San Francisco, CA</span>
+                        </span>
+                        <span class="role-card__arrow">-&gt;</span>
+                    </a>
+                    <a class="role-card" href="#apply">
+                        <span>
+                            <span class="role-card__title">Computer Vision Researcher</span>
+                            <span class="role-card__meta">Remote</span>
+                        </span>
+                        <span class="role-card__arrow">-&gt;</span>
+                    </a>
+                    <a class="role-card" href="#apply">
+                        <span>
+                            <span class="role-card__title">Industrial Design Lead</span>
+                            <span class="role-card__meta">San Francisco, CA</span>
+                        </span>
+                        <span class="role-card__arrow">-&gt;</span>
+                    </a>
+                    <a class="role-card" href="#apply">
+                        <span>
+                            <span class="role-card__title">Embedded Systems Specialist</span>
+                            <span class="role-card__meta">San Francisco, CA</span>
+                        </span>
+                        <span class="role-card__arrow">-&gt;</span>
+                    </a>
+                </div>
+                <p class="careers-note body fade-up">Do not see your role? Send us a direct note at <a href="mailto:careers@7thunit.com">careers@7thunit.com</a>.</p>
+            </div>
+        </section>
+
+        <section class="careers-form-section" id="apply">
+            <div class="container careers-form-section__inner">
+                <div class="fade-up">
+                    <p class="eyebrow eyebrow--accent">Apply</p>
+                    <h2 class="headline">Tell us what you can build.</h2>
+                </div>
+                <form class="form fade-up" data-formspree="https://formspree.io/f/xgopddpz" data-success-message="Received. We will review your application directly.">
+                    <input type="hidden" name="_subject" value="7th Unit careers application">
+                    <div class="form__row form__row--2col">
+                        <label class="field">
+                            <span class="field__label">Name</span>
+                            <input class="field__input" name="name" autocomplete="name" required>
+                            <span class="field__error" data-error-for="name"></span>
+                        </label>
+                        <label class="field">
+                            <span class="field__label">Email</span>
+                            <input class="field__input" type="email" name="email" autocomplete="email" required>
+                            <span class="field__error" data-error-for="email"></span>
+                        </label>
+                    </div>
+                    <div class="form__row form__row--2col">
+                        <label class="field">
+                            <span class="field__label">Role</span>
+                            <input class="field__input" name="role" placeholder="Robotics Systems Engineer" required>
+                            <span class="field__error" data-error-for="role"></span>
+                        </label>
+                        <label class="field">
+                            <span class="field__label">Location</span>
+                            <input class="field__input" name="location" autocomplete="address-level2">
+                            <span class="field__error" data-error-for="location"></span>
+                        </label>
+                    </div>
+                    <label class="field">
+                        <span class="field__label">Why 7th Unit?</span>
+                        <textarea class="field__textarea" name="message" required placeholder="What have you built, and what problem do you want to own here?"></textarea>
+                        <span class="field__error" data-error-for="message"></span>
+                    </label>
+                    <div class="form__actions">
+                        <p class="form__status" data-status></p>
+                        <button class="btn" type="submit">Submit application <span class="btn__arrow">-&gt;</span></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__main">
+                <div>
+                    <div class="footer__brand">7TH UNIT</div>
+                    <p class="footer__tag">Build robots that work.</p>
+                </div>
+                <div>
+                    <h2 class="footer__col-title">Platform</h2>
+                    <ul class="footer__list">
+                        <li><a class="footer__link" href="/product.html">Product</a></li>
+                        <li><a class="footer__link" href="/os.html">Unit OS</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="footer__col-title">Company</h2>
+                    <ul class="footer__list">
+                        <li><a class="footer__link" href="/about.html">About</a></li>
+                        <li><a class="footer__link" href="/careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="footer__col-title">Contact</h2>
+                    <ul class="footer__list">
+                        <li><a class="footer__link" href="mailto:careers@7thunit.com">careers@7thunit.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__base">
+                <span>7th Unit - Careers</span>
+                <span>2026</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+/*
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/assets/css/*
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/assets/js/*
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/assets/images/*
+  Cache-Control: public, max-age=86400

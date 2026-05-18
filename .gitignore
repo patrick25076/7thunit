@@ -1,0 +1,49 @@
+# Local-only working folder: design references, copy docs, version backups,
+# debug screenshots. Kept on disk for the founder but never pushed.
+_local/
+_before-*/
+_previous-*/
+_stitch-*/
+
+# Cloudflare Pages / Wrangler
+.wrangler/
+.dev.vars
+
+# Claude Code local data
+.claude/
+
+# Working docs (Word + lock files)
+*.docx
+~$*
+*.tmp
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Node (in case anything sneaks in)
+node_modules/
+
+# Misc debug
+*.bak
+*.orig
+screen*.png

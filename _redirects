@@ -1,0 +1,16 @@
+# Cloudflare Pages redirects
+# Preserves the existing /join URL from 7thunit.com/join.
+/join        /careers   301
+/join/       /careers   301
+/product    /product.html   200
+/product/   /product.html   200
+/about      /about.html     200
+/about/     /about.html     200
+/careers    /careers.html   200
+/careers/   /careers.html   200
+/os         /os.html        200
+/os/        /os.html        200
+/film-en    /film-en.html   200
+/film-en/   /film-en.html   200
+/film       /film.html      200
+/film/      /film.html      200
