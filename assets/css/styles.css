@@ -36,7 +36,7 @@
     --gutter:           24px;
     --section-pad-y:    160px;
     --section-pad-x:    64px;
-    --nav-height:       88px;
+    --nav-height:       70px;
 
     /* Motion — slow + soft for cinematic feel */
     --ease-out:         cubic-bezier(0.16, 1, 0.3, 1);
@@ -48,7 +48,7 @@
     :root {
         --section-pad-y: 112px;
         --section-pad-x: 32px;
-        --nav-height:    76px;
+        --nav-height:    68px;
     }
 }
 
@@ -139,7 +139,7 @@ select {
 .display {
     font-family: var(--font-serif);
     font-weight: 300;
-    font-size: clamp(54px, 8.2vw, 118px);
+    font-size: clamp(42px, 6.2vw, 86px);
     line-height: 1.05;
     letter-spacing: 0;
     color: var(--text);
@@ -148,7 +148,7 @@ select {
 .headline {
     font-family: var(--font-serif);
     font-weight: 300;
-    font-size: clamp(36px, 4.4vw, 56px);
+    font-size: clamp(30px, 3.6vw, 48px);
     line-height: 1.1;
     letter-spacing: 0;
     color: var(--text);
@@ -157,7 +157,7 @@ select {
 .subhead {
     font-family: var(--font-serif);
     font-weight: 300;
-    font-size: clamp(24px, 2.4vw, 32px);
+    font-size: clamp(22px, 2.1vw, 28px);
     line-height: 1.2;
     letter-spacing: 0;
     color: var(--text);
@@ -279,8 +279,8 @@ select {
 
 .nav__brand {
     font-family: var(--font-serif);
-    font-weight: 500;
-    font-size: clamp(34px, 3.6vw, 54px);
+    font-weight: 400;
+    font-size: clamp(24px, 2.2vw, 34px);
     letter-spacing: 0.015em;
     color: var(--text);
     line-height: 1;
@@ -429,7 +429,7 @@ main { padding-top: var(--nav-height); }
 .footer__brand {
     font-family: var(--font-serif);
     font-weight: 500;
-    font-size: clamp(42px, 4vw, 64px);
+    font-size: clamp(30px, 2.8vw, 42px);
     line-height: 1;
     text-transform: uppercase;
     color: var(--text);
@@ -439,7 +439,7 @@ main { padding-top: var(--nav-height); }
 .footer__tag {
     font-family: var(--font-serif);
     font-weight: 300;
-    font-size: clamp(28px, 3vw, 42px);
+    font-size: clamp(22px, 2.1vw, 30px);
     letter-spacing: 0;
     color: var(--text);
     max-width: 12ch;
@@ -666,10 +666,29 @@ main { padding-top: var(--nav-height); }
         transform 8s var(--ease-cinema),
         filter 3.2s var(--ease-cinema);
 }
+.cinema__image--hero-native {
+    position: absolute;
+    width: auto;
+    height: min(118vh, 1180px);
+    max-width: none;
+    max-height: none;
+    object-fit: contain;
+    object-position: center right;
+    left: auto;
+    right: clamp(-40px, 1vw, 24px);
+    top: 54%;
+    transform: translateY(-50%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 14%, #000 100%);
+    mask-image: linear-gradient(to right, transparent 0%, #000 14%, #000 100%);
+}
 .cinema__image[data-lit="true"] {
     opacity: 1;
     transform: scale(1);
     filter: brightness(0.85) saturate(0.95);
+}
+.cinema__image--hero-native[data-lit="true"] {
+    transform: translateY(-50%);
+    filter: brightness(0.88) saturate(0.95) contrast(1.04);
 }
 .cinema__image--soft[data-lit="true"] {
     filter: brightness(0.7) saturate(0.85) contrast(1.05);
@@ -720,7 +739,7 @@ main { padding-top: var(--nav-height); }
 }
 .cinema__content--wide { max-width: 960px; }
 .cinema .display {
-    font-size: clamp(44px, 5.8vw, 82px);
+    font-size: clamp(34px, 4.3vw, 60px);
     line-height: 1.06;
     max-width: 13.5ch;
 }
@@ -792,6 +811,79 @@ main { padding-top: var(--nav-height); }
     .cinema__inner--right,
     .cinema__inner--left,
     .cinema__inner--center { justify-content: flex-start; align-items: flex-end; text-align: left; }
+    .cinema__image--hero-native {
+        width: auto;
+        height: min(88vh, 820px);
+        max-width: none;
+        max-height: none;
+        right: 50%;
+        top: 52%;
+        transform: translate(50%, -50%);
+    }
+    .cinema__image--hero-native[data-lit="true"] {
+        transform: translate(50%, -50%);
+    }
+}
+
+/* HOMEPAGE — Section 2: plain black with transparent robot concept */
+.work-section {
+    background: #000;
+    min-height: calc(100vh - var(--nav-height));
+    display: flex;
+    align-items: center;
+    padding-block: 0;
+}
+.work-section__inner {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--section-pad-x);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 56px;
+    align-items: center;
+}
+@media (min-width: 900px) {
+    .work-section__inner {
+        grid-template-columns: minmax(360px, 0.9fr) minmax(420px, 1fr);
+        gap: 96px;
+    }
+}
+.work-section__visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - var(--nav-height));
+}
+.work-section__visual img {
+    display: block;
+    width: auto;
+    height: min(82vh, 740px);
+    max-width: 52vw;
+    object-fit: contain;
+}
+.work-section__copy {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.work-section .display {
+    font-size: clamp(32px, 3.8vw, 52px);
+    line-height: 1.08;
+    max-width: 12ch;
+}
+@media (max-width: 899px) {
+    .work-section {
+        min-height: 100vh;
+        padding-block: var(--section-pad-y);
+    }
+    .work-section__visual {
+        min-height: auto;
+    }
+    .work-section__visual img {
+        height: min(50vh, 430px);
+        max-width: 92vw;
+    }
 }
 
 /* Hero copy fade-in choreography */
@@ -821,7 +913,7 @@ main { padding-top: var(--nav-height); }
 .s3-stage {
     position: relative;
     overflow: hidden;
-    background: var(--bg-page);
+    background: #000;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -867,6 +959,11 @@ main { padding-top: var(--nav-height); }
     .s3-stage__grid { grid-template-columns: 1.1fr 1fr; gap: 80px; }
 }
 .s3-stage__copy { display: flex; flex-direction: column; gap: 32px; }
+.s3-stage .display {
+    font-size: clamp(32px, 3.8vw, 52px);
+    line-height: 1.08;
+    max-width: 12.5ch;
+}
 
 /* Phone */
 .phone-stage {
@@ -994,6 +1091,97 @@ main { padding-top: var(--nav-height); }
     border-radius: 12px 12px 2px 12px;
 }
 .msg--in { align-self: flex-start; }
+
+/* Editable iPhone-style mockup used on homepage Section 3. */
+.iphone-stage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 620px;
+}
+.iphone-stage::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 130px;
+    border-radius: 50%;
+    background: rgba(93, 197, 217, 0.13);
+    filter: blur(50px);
+    bottom: 42px;
+}
+.iphone-frame {
+    position: relative;
+    width: 338px;
+    height: 704px;
+    border-radius: 58px;
+    padding: 11px;
+    background:
+        linear-gradient(135deg, #777b7c 0%, #191b1d 18%, #050607 48%, #4b5052 82%, #b3b6b5 100%);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,0.16),
+        inset 0 0 0 3px rgba(0,0,0,0.75),
+        0 34px 80px rgba(0,0,0,0.65);
+    transform: rotate(-7deg);
+}
+.iphone-frame__button {
+    position: absolute;
+    width: 3px;
+    background: #2a2d2f;
+    border-radius: 4px;
+}
+.iphone-frame__button--left {
+    left: -4px;
+    top: 142px;
+    height: 86px;
+}
+.iphone-frame__button--right {
+    right: -4px;
+    top: 190px;
+    height: 112px;
+}
+.iphone-screen {
+    position: relative;
+    background: #101114;
+    border-radius: 47px;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
+}
+.iphone-screen::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(120deg, rgba(255,255,255,0.10), transparent 26%, transparent 70%, rgba(255,255,255,0.04));
+    opacity: 0.55;
+}
+.iphone-dynamic-island {
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 104px;
+    height: 30px;
+    border-radius: 18px;
+    background: #000;
+    z-index: 3;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.03);
+}
+.iphone-screen .phone__statusbar {
+    padding: 22px 24px 0;
+}
+.iphone-screen .phone__chat-header {
+    margin-top: 38px;
+}
+@media (max-width: 540px) {
+    .iphone-stage { min-height: 560px; }
+    .iphone-frame { transform: rotate(-5deg) scale(0.82); }
+}
 
 
 /* ==========================================================================
