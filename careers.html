@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Careers - 7th Unit</title>
-    <meta name="description" content="Join 7th Unit and build humanoid robots for industrial work.">
+    <meta name="description" content="Featured roles at 7th Unit across AI, engineering, operations, hardware, and data.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Literata:opsz,wght@7..72,300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=20260520-homepage-refine">
-    <script src="/assets/js/main.js?v=20260520-homepage-refine" defer></script>
+    <link rel="stylesheet" href="/assets/css/styles.css?v=20260522-pages">
+    <script src="/assets/js/main.js?v=20260522-pages" defer></script>
 </head>
 <body>
     <header class="nav" aria-label="Primary navigation">
@@ -22,7 +22,7 @@
                 <ul class="nav__links">
                     <li><a class="nav__link" href="/product.html">Product</a></li>
                     <li><a class="nav__link" href="/os.html">Unit OS</a></li>
-                    <li><a class="nav__link" href="/about.html">About</a></li>
+                    <li><a class="nav__link" href="/vision.html">Vision</a></li>
                     <li><a class="nav__link" href="/careers.html" aria-current="page">Careers</a></li>
                 </ul>
             </nav>
@@ -30,63 +30,104 @@
     </header>
 
     <main>
-        <section class="careers-hero">
+        <section class="careers-hero careers-hero--featured">
             <div class="container careers-hero__inner">
-                <p class="eyebrow eyebrow--accent fade-up" data-revealed="true">Join us</p>
-                <h1 class="display fade-up" data-revealed="true">Build the robot.</h1>
-                <p class="lede fade-up" data-revealed="true">We are a humanoid robotics company engineering the foundation for generalized physical intelligence. We focus on rigorous engineering, material science, and control theory. If you are driven by solving the hardest problems in robotics with a team that values precision over noise, join us.</p>
+                <p class="eyebrow eyebrow--accent fade-up" data-revealed="true">Featured roles</p>
+                <h1 class="headline fade-up" data-revealed="true">We're hiring candidates who are hungry to make their impact across AI, engineering, and operations.</h1>
             </div>
         </section>
 
-        <section class="careers-roles">
+        <section class="careers-roles careers-roles--structured">
             <div class="container careers-roles__inner">
-                <p class="careers-roles__head eyebrow fade-up">Open positions</p>
-                <div class="role-list fade-up">
-                    <a class="role-card" href="#apply">
-                        <span>
-                            <span class="role-card__title">Robotics Systems Engineer</span>
-                            <span class="role-card__meta">San Francisco, CA</span>
-                        </span>
-                        <span class="role-card__arrow">-&gt;</span>
-                    </a>
-                    <a class="role-card" href="#apply">
-                        <span>
-                            <span class="role-card__title">Lead Control Theorist</span>
-                            <span class="role-card__meta">San Francisco, CA</span>
-                        </span>
-                        <span class="role-card__arrow">-&gt;</span>
-                    </a>
-                    <a class="role-card" href="#apply">
-                        <span>
-                            <span class="role-card__title">Computer Vision Researcher</span>
-                            <span class="role-card__meta">Remote</span>
-                        </span>
-                        <span class="role-card__arrow">-&gt;</span>
-                    </a>
-                    <a class="role-card" href="#apply">
-                        <span>
-                            <span class="role-card__title">Industrial Design Lead</span>
-                            <span class="role-card__meta">San Francisco, CA</span>
-                        </span>
-                        <span class="role-card__arrow">-&gt;</span>
-                    </a>
-                    <a class="role-card" href="#apply">
-                        <span>
-                            <span class="role-card__title">Embedded Systems Specialist</span>
-                            <span class="role-card__meta">San Francisco, CA</span>
-                        </span>
-                        <span class="role-card__arrow">-&gt;</span>
-                    </a>
+                <div class="role-category">
+                    <h2 class="role-category__title">Hardware</h2>
+                    <div class="role-accordion">
+                        <details class="role-detail">
+                            <summary>Mechanical Design Engineer</summary>
+                            <p>You design and iterate on the physical structure of the robot - chassis, joints, mounting systems, and mechanical assemblies. You own CAD, tolerance analysis, and component selection from early concept through prototype. You work closely with the power electronics and manufacturing engineers to ensure designs can be built with real components under real constraints. SolidWorks or Fusion 360 experience required. To apply, use the form below.</p>
+                        </details>
+                        <details class="role-detail">
+                            <summary>Power Electronics Engineer</summary>
+                            <p>You design and own the electrical architecture of the robot - power distribution, motor drivers, battery management, PCB design, and wiring. Without this role nothing runs. You work closely with the mechanical engineer on physical layout and with the embedded engineer on control interfaces. Experience with DC motor systems, battery architectures, and PCB design in hardware-constrained environments required. To apply, use the form below.</p>
+                        </details>
+                        <details class="role-detail">
+                            <summary>Manufacturing &amp; Prototyping Engineer</summary>
+                            <p>You turn designs into physical reality. You source components, manage supplier relationships, oversee prototype assembly, and iterate fast when parts don't fit or don't work. You know the difference between what looks good in CAD and what can actually be built, and you say so early. Experience with rapid prototyping, off-the-shelf component sourcing, and hands-on assembly of electromechanical systems required. To apply, use the form below.</p>
+                        </details>
+                    </div>
                 </div>
-                <p class="careers-note body fade-up">Do not see your role? Send us a direct note at <a href="mailto:careers@7thunit.com">careers@7thunit.com</a>.</p>
+
+                <div class="role-category">
+                    <h2 class="role-category__title">Systems &amp; Integration</h2>
+                    <div class="role-accordion">
+                        <details class="role-detail">
+                            <summary>Embedded Systems Engineer</summary>
+                            <p>You own the low-level software that makes the robot operate in the real world. You write firmware for microcontrollers, design real-time control loops, handle motor drivers and sensor interfaces, and ensure reliable communication between hardware and software. You are the bridge between the physical robot and everything running above it. We work with ARM-based microcontrollers, ROS 2, and custom motor control architectures. Prior experience with embedded C/C++, RTOS, and hardware-software integration required. To apply, use the form below.</p>
+                        </details>
+                        <details class="role-detail">
+                            <summary>Systems Integration Engineer</summary>
+                            <p>You make sure all subsystems - mechanical, electrical, firmware, and software - work together as a single coherent robot. You define interfaces between teams, design and run integration tests, and debug the hardest cross-system problems that no one else sees because they only look at their own domain. Prior experience integrating complex hardware-software systems in a real deployment context required. To apply, use the form below.</p>
+                        </details>
+                        <details class="role-detail">
+                            <summary>Motion Planning &amp; Controls Engineer</summary>
+                            <p>You develop and own the algorithms that determine how the robot moves - from low-level motor control and torque management to high-level trajectory generation and motion planning. You work at the boundary of mathematics and real hardware, ensuring the robot moves precisely, efficiently, and safely in unstructured industrial environments. Experience with control theory, model predictive control, forward and inverse kinematics, and real-time control systems required. Proficiency in Python and C++ required. To apply, use the form below.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="role-category">
+                    <h2 class="role-category__title">Software &amp; AI</h2>
+                    <div class="role-accordion">
+                        <details class="role-detail">
+                            <summary>Robot Software Engineer</summary>
+                            <p>You build the intelligence layer that sits above the hardware - navigation and motion planning, task execution, fleet coordination logic, and the command interface that lets operators give the robot plain-language instructions. You work in ROS 2, Python, and C++, and you care deeply about making robot behavior reliable in real, unpredictable environments. Experience with autonomous navigation, motion planning, or task execution systems required. To apply, use the form below.</p>
+                        </details>
+                        <details class="role-detail">
+                            <summary>Perception &amp; Sensor Systems Engineer</summary>
+                            <p>You build the robot's ability to understand its environment. This means sensor fusion across cameras, LiDAR, and IMUs, object detection and tracking, and the localization and mapping stack the robot uses to navigate a warehouse floor. You work at the intersection of hardware and software - selecting and integrating sensors physically, then building the perception pipeline on top of them. Experience with SLAM, OpenCV, and deep learning-based detectors required. To apply, use the form below.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="role-category">
+                    <h2 class="role-category__title">Data</h2>
+                    <div class="role-accordion">
+                        <details class="role-detail">
+                            <summary>Data Collection Specialist</summary>
+                            <p>If you currently perform any repetitive physical work - anywhere from warehouses and factories to repetitive physical tasks at home - we want to talk with you. You wear a mounted camera, perform repetitive workflows across different environments and industries, follow collection protocols, and upload footage to our pipeline. No prior robotics experience required. What matters is reliability and the ability to follow precise instructions consistently. To apply, use the form below.</p>
+                        </details>
+                        <details class="role-detail">
+                            <summary>Robot Operator - Teleoperation</summary>
+                            <p>You operate the robot remotely to generate high-quality demonstration data for training our AI systems. You guide the robot through real warehouse and logistics tasks using teleoperation equipment, upload collected sessions to our training pipeline, and provide direct feedback on robot behavior and edge cases encountered during operation. Physical coordination, spatial awareness, and comfort working with hardware required. To apply, use the form below.</p>
+                        </details>
+                        <details class="role-detail">
+                            <summary>ML Data Engineer</summary>
+                            <p>You take raw video and sensor data collected from the field and turn it into clean, labeled, model-compatible training datasets. You build and maintain annotation pipelines, define labeling standards, and work directly with the AI team to understand what data the models need and in what format. Experience with video annotation workflows, dataset management, and ML training pipelines required. Familiarity with egocentric video and action labeling is a strong plus. To apply, use the form below.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="role-category">
+                    <h2 class="role-category__title">Operations</h2>
+                    <div class="role-accordion">
+                        <details class="role-detail">
+                            <summary>Business Development Manager, Industrial Deployments</summary>
+                            <p>You identify, engage, and close our first operator partnerships. You understand how decisions get made inside warehouses, logistics operations, and manufacturing facilities, and you know how to navigate them. You source leads, build relationships with operations and procurement stakeholders, structure pilot agreements, and stay involved through deployment to ensure the partnership succeeds. Experience in B2B business development or enterprise sales in an industrial, logistics, or manufacturing context required. An existing network of operator contacts is a strong advantage. To apply, use the form below.</p>
+                        </details>
+                        <details class="role-detail">
+                            <summary>Hardware Procurement &amp; Supply Chain Manager</summary>
+                            <p>You source every component that goes into the robot. You identify and qualify suppliers, negotiate pricing, manage lead times, and ensure the engineering team always has what they need to build and iterate without delays. You know the difference between a reliable manufacturer and a cheap one, and you have the relationships that matter. Experience in hardware procurement or supply chain management in an electromechanical or industrial context required. To apply, use the form below.</p>
+                        </details>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="careers-form-section" id="apply">
             <div class="container careers-form-section__inner">
                 <div class="fade-up">
-                    <p class="eyebrow eyebrow--accent">Apply</p>
-                    <h2 class="headline">Tell us what you can build.</h2>
+                    <p class="eyebrow eyebrow--accent">Application form</p>
+                    <h2 class="headline">Apply.</h2>
                 </div>
                 <form class="form fade-up" data-formspree="https://formspree.io/f/xgopddpz" data-success-message="Received. We will review your application directly.">
                     <input type="hidden" name="_subject" value="7th Unit careers application">
@@ -102,26 +143,40 @@
                             <span class="field__error" data-error-for="email"></span>
                         </label>
                     </div>
-                    <div class="form__row form__row--2col">
-                        <label class="field">
-                            <span class="field__label">Role</span>
-                            <input class="field__input" name="role" placeholder="Robotics Systems Engineer" required>
-                            <span class="field__error" data-error-for="role"></span>
-                        </label>
-                        <label class="field">
-                            <span class="field__label">Location</span>
-                            <input class="field__input" name="location" autocomplete="address-level2">
-                            <span class="field__error" data-error-for="location"></span>
-                        </label>
-                    </div>
                     <label class="field">
-                        <span class="field__label">Why 7th Unit?</span>
-                        <textarea class="field__textarea" name="message" required placeholder="What have you built, and what problem do you want to own here?"></textarea>
-                        <span class="field__error" data-error-for="message"></span>
+                        <span class="field__label">Role you are applying for</span>
+                        <select class="field__input" name="role" required>
+                            <option value="">Select role</option>
+                            <option>Mechanical Design Engineer</option>
+                            <option>Power Electronics Engineer</option>
+                            <option>Manufacturing &amp; Prototyping Engineer</option>
+                            <option>Embedded Systems Engineer</option>
+                            <option>Systems Integration Engineer</option>
+                            <option>Motion Planning &amp; Controls Engineer</option>
+                            <option>Robot Software Engineer</option>
+                            <option>Perception &amp; Sensor Systems Engineer</option>
+                            <option>Data Collection Specialist</option>
+                            <option>Robot Operator - Teleoperation</option>
+                            <option>ML Data Engineer</option>
+                            <option>Business Development Manager, Industrial Deployments</option>
+                            <option>Hardware Procurement &amp; Supply Chain Manager</option>
+                            <option>Other</option>
+                        </select>
+                        <span class="field__error" data-error-for="role"></span>
+                    </label>
+                    <label class="field">
+                        <span class="field__label">What is the most complex thing you have built or shipped? Tell us about it and tell us about yourself.</span>
+                        <textarea class="field__textarea" name="built_or_shipped" required></textarea>
+                        <span class="field__error" data-error-for="built_or_shipped"></span>
+                    </label>
+                    <label class="field">
+                        <span class="field__label">Link to your work, GitHub, LinkedIn, or portfolio</span>
+                        <input class="field__input" name="link" type="url" placeholder="https://">
+                        <span class="field__error" data-error-for="link"></span>
                     </label>
                     <div class="form__actions">
                         <p class="form__status" data-status></p>
-                        <button class="btn" type="submit">Submit application <span class="btn__arrow">-&gt;</span></button>
+                        <button class="btn" type="submit">Apply <span class="btn__arrow">-&gt;</span></button>
                     </div>
                 </form>
             </div>
@@ -145,7 +200,7 @@
                 <div>
                     <h2 class="footer__col-title">Company</h2>
                     <ul class="footer__list">
-                        <li><a class="footer__link" href="/about.html">About</a></li>
+                        <li><a class="footer__link" href="/vision.html">Vision</a></li>
                         <li><a class="footer__link" href="/careers.html">Careers</a></li>
                     </ul>
                 </div>
