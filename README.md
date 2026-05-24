@@ -19,7 +19,7 @@ Plain HTML, CSS, and JavaScript. No framework, no build step, no `npm install`.
 | `assets/css/styles.css` | Single stylesheet — the entire design system |
 | `assets/js/main.js` | Vanilla JS — nav toggle, fade-up reveals, form handling |
 | `assets/images/` | Hero photos, scene renders, founder portrait |
-| `_headers`, `_redirects` | Cloudflare Pages config (security headers + URL rewrites like `/product` → `product.html`) |
+| `_headers`, `_redirects` | Cloudflare Pages config (security headers + legacy redirects only) |
 | `.gitignore` | Excludes design references, Word docs, and OS junk from Git |
 
 The folder `_local/` (if you ever see it on disk) holds design references, copy drafts, and old version snapshots. It's gitignored and stays on the developer's machine only.
