@@ -213,7 +213,155 @@
 
 
     /* ----------------------------------------------------------------------
-       7. Boot
+       7. Unit OS interactions
+       Terminal skill preview and focused waitlist modals.
+       ---------------------------------------------------------------------- */
+
+    function initUnitOsInteractions() {
+        const terminalModal = document.querySelector('[data-terminal-modal]');
+        const terminalContent = document.querySelector('[data-terminal-content]');
+        const terminalTitle = document.querySelector('[data-terminal-title]');
+        const terminalClose = document.querySelector('[data-terminal-close]');
+        const waitlistModals = document.querySelectorAll('[data-waitlist-modal]');
+
+        if (!terminalModal && !waitlistModals.length) return;
+
+        const terminalCopy = {
+            'truck-unloading': `> SKILL: Truck Unloading
+> STATUS: Available
+> ENABLES: Autonomous unloading and
+  routing of cargo from incoming
+  trucks to designated zones
+> RUNS ON: 7th Unit v1 /
+  ROS2-compatible systems
+> SCALES: Fleet-wide deployment
+  in one command
+> [UNLOCK SKILL]`,
+            'pallet-transfer': `> SKILL: Pallet Transfer
+> STATUS: Available
+> ENABLES: Autonomous pallet movement
+  between zones based on live task
+  allocation and fleet logic
+> RUNS ON: 7th Unit v1 /
+  ROS2-compatible systems
+> SCALES: Fleet-wide deployment
+  in one command
+> [UNLOCK SKILL]`,
+            'box-sorting': `> SKILL: Box Sorting
+> STATUS: Available
+> ENABLES: Autonomous sorting of
+  packages by size, weight, or
+  destination in real time
+> RUNS ON: 7th Unit v1 /
+  ROS2-compatible systems
+> SCALES: Fleet-wide deployment
+  in one command
+> [UNLOCK SKILL]`,
+            'part-inspection': `> SKILL: Part Inspection
+> STATUS: Available
+> ENABLES: Automated visual inspection
+  and defect detection across
+  components and production lines
+> RUNS ON: 7th Unit v1 /
+  ROS2-compatible systems
+> SCALES: Fleet-wide deployment
+  in one command
+> [UNLOCK SKILL]`,
+            'perimeter-patrol': `> SKILL: Perimeter Patrol
+> STATUS: Available
+> ENABLES: Scheduled autonomous safety
+  and security sweeps across your
+  entire facility floor
+> RUNS ON: 7th Unit v1 /
+  ROS2-compatible systems
+> SCALES: Fleet-wide deployment
+  in one command
+> [UNLOCK SKILL]`,
+            'cook-omelette': `> SKILL: Cook an Omelette
+> STATUS: In development
+> ENABLES: [REDACTED]
+> RUNS ON: Unknown
+> SCALES: Unknown
+> ETA: When we figure it out
+> [UNLOCK SKILL]`
+        };
+
+        const setModalState = () => {
+            const modalOpen = Boolean(document.querySelector('.terminal-modal:not([hidden]), .waitlist-modal:not([hidden])'));
+            document.body.toggleAttribute('data-modal-open', modalOpen);
+        };
+
+        const closeTerminal = () => {
+            if (!terminalModal) return;
+            terminalModal.hidden = true;
+            setModalState();
+        };
+
+        const closeWaitlists = () => {
+            waitlistModals.forEach(modal => {
+                modal.hidden = true;
+            });
+            setModalState();
+        };
+
+        document.querySelectorAll('[data-terminal-skill]').forEach(card => {
+            card.addEventListener('click', () => {
+                const skill = card.dataset.terminalSkill;
+                if (!terminalModal || !terminalContent || !terminalCopy[skill]) return;
+                terminalContent.textContent = terminalCopy[skill];
+                if (terminalTitle) {
+                    terminalTitle.textContent = card.querySelector('.skill-card__name')?.textContent || 'Skill';
+                }
+                terminalModal.hidden = false;
+                setModalState();
+                if (terminalClose) terminalClose.focus({ preventScroll: true });
+            });
+        });
+
+        if (terminalClose) terminalClose.addEventListener('click', closeTerminal);
+        if (terminalModal) {
+            terminalModal.addEventListener('click', (event) => {
+                if (event.target === terminalModal || event.target.hasAttribute('data-terminal-close')) {
+                    closeTerminal();
+                }
+            });
+        }
+
+        document.querySelectorAll('[data-waitlist-open]').forEach(button => {
+            button.addEventListener('click', () => {
+                const target = button.dataset.waitlistOpen;
+                const modal = document.querySelector(`[data-waitlist-modal="${target}"]`);
+                if (!modal) return;
+                closeWaitlists();
+                modal.hidden = false;
+                setModalState();
+                modal.querySelector('[data-waitlist-close]')?.focus({ preventScroll: true });
+            });
+        });
+
+        waitlistModals.forEach(modal => {
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal || event.target.hasAttribute('data-waitlist-close')) {
+                    modal.hidden = true;
+                    setModalState();
+                }
+            });
+            modal.querySelector('[data-waitlist-close]')?.addEventListener('click', () => {
+                modal.hidden = true;
+                setModalState();
+            });
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key !== 'Escape') return;
+            closeTerminal();
+            closeWaitlists();
+        });
+    }
+
+
+    /* ----------------------------------------------------------------------
+       8. Boot
        ---------------------------------------------------------------------- */
 
     function boot() {
@@ -223,6 +371,7 @@
         initCountdowns();
         initNavToggle();
         initForms();
+        initUnitOsInteractions();
     }
 
     if (document.readyState === 'loading') {

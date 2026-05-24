@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Unit OS - 7th Unit</title>
-    <meta name="description" content="Unit OS is the software and learning layer for 7th Unit robot fleets.">
+    <meta name="description" content="7th Unit OS is the intelligence layer between robots and the work that needs to be done.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Literata:opsz,wght@7..72,300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=20260522-pages">
-    <script src="/assets/js/main.js?v=20260522-pages" defer></script>
+    <link rel="stylesheet" href="/assets/css/styles.css?v=20260524-os-final">
+    <script src="/assets/js/main.js?v=20260524-os-final" defer></script>
 </head>
 <body>
     <header class="nav" aria-label="Primary navigation">
@@ -29,127 +29,240 @@
         </div>
     </header>
 
-    <main>
-        <section class="os-hero">
-            <div class="container os-hero__inner">
-                <p class="eyebrow eyebrow--accent fade-up" data-revealed="true">Unit OS</p>
-                <h1 class="display fade-up" data-revealed="true">The operating system for general-purpose work.</h1>
-                <p class="lede fade-up" data-revealed="true">A software and learning layer designed to govern multi-robot fleets with precision, operator oversight, and plain-language commands.</p>
-                <div class="os-hero__cta-row fade-up" data-revealed="true">
-                    <a class="btn" href="/product.html">Request Early Access <span class="btn__arrow">-&gt;</span></a>
-                </div>
+    <main class="unit-os-page">
+        <section class="unit-os-hero" aria-labelledby="unit-os-title">
+            <div class="unit-os-hero__inner">
+                <h1 id="unit-os-title">We build the robots. This is what makes them intelligent.</h1>
+                <p>The intelligence layer between your robots and the work that needs to be done.</p>
             </div>
         </section>
 
-        <section class="os-capabilities">
-            <div class="container">
-                <div class="os-capabilities__list">
-                    <article class="capability fade-up">
-                        <div class="capability__num">01</div>
-                        <h2 class="capability__title">Perceive</h2>
-                        <p class="capability__body">Fuse facility context, task state, object position, and fleet telemetry into a single operational view.</p>
-                    </article>
-                    <article class="capability fade-up">
-                        <div class="capability__num">02</div>
-                        <h2 class="capability__title">Reason</h2>
-                        <p class="capability__body">Translate operator intent into bounded robot actions, with constraints for timing, routes, task priority, and safety conditions.</p>
-                    </article>
-                    <article class="capability fade-up">
-                        <div class="capability__num">03</div>
-                        <h2 class="capability__title">Act</h2>
-                        <p class="capability__body">Dispatch robots to execute multi-step workflows while tracking completion, exceptions, and intervention needs.</p>
-                    </article>
-                    <article class="capability fade-up">
-                        <div class="capability__num">04</div>
-                        <h2 class="capability__title">Learn</h2>
-                        <p class="capability__body">Convert every deployment into proprietary workflow data that improves the skill library for the next deployment.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="container os-features">
-            <article class="os-feature">
-                <div class="os-feature__copy fade-up">
-                    <p class="eyebrow eyebrow--accent">Operator commands</p>
-                    <h2 class="headline">Plain language in. Precise work out.</h2>
-                    <p class="body">Operators should not need to write scripts to move work through a facility. Unit OS turns direct instructions into scheduled actions, validated routes, and visible task status.</p>
-                </div>
-                <div class="os-feature__visual fade-up" aria-hidden="true">
-                    <img class="plate__image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASSo0MYIlrcajeb7g0n8668CU9AHuIzohhBnEFHYHvdyXaVpB30llnw3GtepQRqjBH0X6vETg79QNhLoV3MfXCgS0HlH1Wr5EziYAp7FNMvXE5P-PGZ4dnfrFBtyu2lICJ72zIlJ4ENafSPRjrLcwX1RHkX75r82mMR3WhJs22W8chWlg-qEATGKbdTKlQUE5lUPfKWt-pHzg9qdGJavlZuMvNX0VEIWrJfbV4jYjQzRzYo7pqk7mtV_m7w5X4e1JlU6QlPr8vUZv5" alt="">
-                </div>
-            </article>
-            <article class="os-feature os-feature--flip">
-                <div class="os-feature__copy fade-up">
-                    <p class="eyebrow eyebrow--accent">Fleet memory</p>
-                    <h2 class="headline">One deployment teaches the next.</h2>
-                    <p class="body">The software layer captures real workflow structure: task sequences, bottlenecks, intervention points, object handling patterns, and the facility constraints that matter.</p>
-                </div>
-                <div class="os-feature__visual fade-up" aria-hidden="true">
-                    <img class="plate__image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjbGz_2cg2X1ZgmtqgP34vU-sngzkBZbuMNMX9eMp1u5FVyOBGhNztb1I04cWk1aYr6S7qcOoJ5vNHCFyCaB5LUePsOPqiASRlxOvyZYeypEc3pCydlUDwJs_jTTmOXEBf5TU70CBBssibx54HiI9h5yGB2Il2Sxv9WEuQjpD2xiSk4cR9d0guWbxFJnd0TMjk5PFeZrG1HiXMo5fXLrB3X9XaavPIeStBqIp_2iaBmMxlolBVoB-8s0AvM8xLEw106nWoQzwPfmOA" alt="">
-                </div>
-            </article>
-        </section>
-
-        <section class="terminal-section">
-            <div class="container">
-                <div class="terminal fade-up">
-                    <div class="terminal__bar">
-                        <span>Terminal</span>
-                        <span>///</span>
-                        <span>fleet_deploy.sh</span>
+        <section class="unit-os-section unit-os-section--centered" aria-labelledby="os-product-title">
+            <p class="unit-os-kicker">7th Unit OS</p>
+            <div class="os-product-card os-matched-card">
+                <div class="os-chat-window" aria-label="7th Unit OS chat interface mockup">
+                    <div class="os-chat-window__top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <pre class="terminal__body"><code><span class="terminal__comment"># Deploy latest task policy</span>
-<span class="terminal__prompt">$</span> 7u-cli deploy --policy "obj_manipulation_v4" --fleet "pilot-floor-a"
-<span class="terminal__out">Validating route constraints...</span>
-<span class="terminal__out">Deploying... [====================] 100%</span>
-<span class="terminal__out">Deployment successful. Units rebooting to apply changes.</span></code></pre>
+                    <div class="os-chat-window__body">
+                        <div class="os-chat-message os-chat-message--user">
+                            <span>User</span>
+                            <p>Move unit 3 to bay 7 and start pallet transfer.</p>
+                        </div>
+                        <div class="os-chat-message os-chat-message--robot">
+                            <span>Robot</span>
+                            <p>Confirmed. Executing now.<i class="cursor-blink"></i></p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <div class="os-product-copy">
+                <h2>Install once. Control your entire fleet instantly - from anywhere.</h2>
+                <div class="os-feature-list">
+                    <article>
+                        <h3>Natural Language Control</h3>
+                        <p>Type what you need. The fleet understands, confirms, and executes. Any task, any unit, any location.</p>
+                    </article>
+                    <article>
+                        <h3>Real-Time Override</h3>
+                        <p>Monitor every robot in real time. Reassign tasks, request status, or take direct control instantly.</p>
+                    </article>
+                    <article>
+                        <h3>Fleet Coordination</h3>
+                        <p>Every unit stays aware of the others. Tasks are automatically distributed, sequenced, and optimized. No collisions. No gaps. No duplicated work.</p>
+                    </article>
+                    <article>
+                        <h3>Skill Library Included</h3>
+                        <p>Every deployment includes a core set of operational skills. New capabilities are pushed automatically across your fleet overnight. Your robots don't get upgraded manually. They evolve while they're idle.</p>
+                    </article>
+                </div>
+                <button class="btn" type="button" data-waitlist-open="os-access">Install 7th Unit OS <span class="btn__arrow">-&gt;</span></button>
             </div>
         </section>
 
-        <section class="os-cta">
-            <div class="container os-cta__inner">
-                <p class="eyebrow eyebrow--accent fade-up">Pilot access</p>
-                <h2 class="headline fade-up">Building a facility workflow we should understand?</h2>
-                <a class="btn fade-up" href="/product.html">Request Early Access <span class="btn__arrow">-&gt;</span></a>
+        <section class="unit-os-section" aria-labelledby="skill-library-title">
+            <div class="unit-os-section__head">
+                <p class="unit-os-kicker" id="skill-library-title">Skill Library</p>
+            </div>
+            <div class="skill-library-panel">
+                <div class="skill-grid">
+                    <button class="skill-card" type="button" data-terminal-skill="truck-unloading">
+                        <span class="skill-icon skill-icon--steel" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7zM7 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM18 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+                        </span>
+                        <span class="skill-card__copy">
+                            <strong>Truck Unloading</strong>
+                            <small>Unload and route cargo from incoming trucks to designated zones.</small>
+                        </span>
+                        <span class="skill-card__unlock">Unlock</span>
+                    </button>
+                    <button class="skill-card" type="button" data-terminal-skill="pallet-transfer">
+                        <span class="skill-icon skill-icon--orange" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M4 7l8-4 8 4-8 4zM4 9l8 4 8-4v8l-8 4-8-4z"/></svg>
+                        </span>
+                        <span class="skill-card__copy">
+                            <strong>Pallet Transfer</strong>
+                            <small>Move and stack pallets between zones autonomously.</small>
+                        </span>
+                        <span class="skill-card__unlock">Unlock</span>
+                    </button>
+                    <button class="skill-card" type="button" data-terminal-skill="box-sorting">
+                        <span class="skill-icon skill-icon--blue" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M4 5h8v6H4zM12 13h8v6h-8zM15 4l5 4-5 4V9h-2V7h2zM9 20l-5-4 5-4v3h2v2H9z"/></svg>
+                        </span>
+                        <span class="skill-card__copy">
+                            <strong>Box Sorting</strong>
+                            <small>Sort packages by size, weight, or destination in real time.</small>
+                        </span>
+                        <span class="skill-card__unlock">Unlock</span>
+                    </button>
+                    <button class="skill-card" type="button" data-terminal-skill="part-inspection">
+                        <span class="skill-icon skill-icon--purple" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 3 1 2 2 .3-1.5 1.5.4 2.2-1.9-1-1.9 1 .4-2.2L7 9.3 9 9zM14.5 15.5 21 22l1-1-6.5-6.5z"/></svg>
+                        </span>
+                        <span class="skill-card__copy">
+                            <strong>Part Inspection</strong>
+                            <small>Detect defects and verify component quality across production lines.</small>
+                        </span>
+                        <span class="skill-card__unlock">Unlock</span>
+                    </button>
+                    <button class="skill-card" type="button" data-terminal-skill="perimeter-patrol">
+                        <span class="skill-icon skill-icon--green" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M12 2 5 5v6c0 5 3.5 9 7 11 3.5-2 7-6 7-11V5zM8 12l3 3 5-6 1.5 1.3L11.2 18 6.5 13.4z"/></svg>
+                        </span>
+                        <span class="skill-card__copy">
+                            <strong>Perimeter Patrol</strong>
+                            <small>Run scheduled safety and security sweeps across your facility.</small>
+                        </span>
+                        <span class="skill-card__unlock">Unlock</span>
+                    </button>
+                    <button class="skill-card" type="button" data-terminal-skill="cook-omelette">
+                        <span class="skill-icon skill-icon--red" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M8 5c0-2 2-3 4-3s4 1 4 3c0 1.4-.9 2.3-1.7 3.1-.7.8-1.3 1.5-1.3 2.9h-2c0-1.4-.6-2.1-1.3-2.9C8.9 7.3 8 6.4 8 5zM4 15h16v2H4zm2 4h12v2H6z"/></svg>
+                        </span>
+                        <span class="skill-card__copy">
+                            <strong>Cook an Omelette</strong>
+                            <small>We're working on it.</small>
+                        </span>
+                        <span class="skill-card__unlock">Unlock</span>
+                    </button>
+                </div>
+            </div>
+            <div class="skill-library-copy">
+                <p>Skills are modular capabilities your robots can execute. Browse, unlock, and deploy them across your entire fleet in one click.</p>
+                <p>Core skills are included with every installation. Advanced skills - trained on real operational deployments - are available as upgrades. Compatible with 7th Unit hardware and any ROS2-enabled system.</p>
+                <button class="btn" type="button" data-waitlist-open="library-access">Browse the Library <span class="btn__arrow">-&gt;</span></button>
+            </div>
+        </section>
+
+        <section class="unit-os-section unit-os-section--centered" aria-labelledby="build-title">
+            <p class="unit-os-kicker" id="build-title">Build</p>
+            <div class="build-card os-matched-card">
+                <div class="folder-icon" aria-hidden="true">
+                    <span></span>
+                </div>
+                <p>Your skill here.</p>
+            </div>
+            <div class="os-product-copy">
+                <h2>The Skill Library is open to the world.</h2>
+                <p>Build a discrete operational skill, submit it for review, and publish it across every operator running 7th Unit OS.</p>
+                <div class="os-feature-list">
+                    <article>
+                        <h3>Publish Your Skills</h3>
+                        <p>One build deploys across the entire network. Once approved, your skill becomes instantly available to every connected fleet.</p>
+                    </article>
+                    <article>
+                        <h3>Reach the Network</h3>
+                        <p>Your skills run on 7th Unit hardware and any ROS2-compatible system powered by 7th Unit OS. As the network grows, so does your distribution.</p>
+                    </article>
+                    <article>
+                        <h3>Apply for SDK Access</h3>
+                        <p>We're opening early SDK access to a small group of developers and robotics teams. Tell us what you want to build.</p>
+                    </article>
+                </div>
+                <button class="btn" type="button" data-waitlist-open="sdk-access">Apply to Build <span class="btn__arrow">-&gt;</span></button>
+            </div>
+        </section>
+
+        <section class="unit-os-closing">
+            <div>
+                <h2>Running a warehouse or manufacturing facility?</h2>
+                <p>Put our robots to work.</p>
+                <a class="btn" href="/product.html">Apply for Deployment <span class="btn__arrow">-&gt;</span></a>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer__inner">
-            <div class="footer__main">
-                <div>
-                    <div class="footer__brand">7TH UNIT</div>
-                    <p class="footer__tag">Humanoid robots for entire shifts of industrial work.</p>
-                </div>
-                <div>
-                    <h2 class="footer__col-title">Platform</h2>
-                    <ul class="footer__list">
-                        <li><a class="footer__link" href="/product.html">Product</a></li>
-                        <li><a class="footer__link" href="/os.html">Unit OS</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="footer__col-title">Company</h2>
-                    <ul class="footer__list">
-                        <li><a class="footer__link" href="/vision.html">Vision</a></li>
-                        <li><a class="footer__link" href="/careers.html">Careers</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="footer__col-title">Contact</h2>
-                    <ul class="footer__list">
-                        <li><a class="footer__link" href="mailto:hello@7thunit.com">hello@7thunit.com</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__base">
-                <span>7th Unit - Unit OS</span>
-                <span>2026</span>
-            </div>
+    <div class="terminal-modal" data-terminal-modal hidden>
+        <div class="terminal-modal__backdrop" data-terminal-close></div>
+        <div class="terminal-modal__window" role="dialog" aria-modal="true" aria-labelledby="terminal-modal-title">
+            <button class="terminal-modal__close" type="button" data-terminal-close aria-label="Close terminal">Close</button>
+            <pre><code id="terminal-modal-title" data-terminal-content></code><span class="terminal-cursor"></span></pre>
         </div>
-    </footer>
+    </div>
+
+    <div class="waitlist-modal" data-waitlist-modal="os-access" hidden>
+        <div class="waitlist-modal__backdrop" data-waitlist-close></div>
+        <div class="waitlist-modal__panel" role="dialog" aria-modal="true" aria-labelledby="os-access-title">
+            <button class="waitlist-modal__close" type="button" data-waitlist-close aria-label="Close popup">Close</button>
+            <h2 id="os-access-title">Get Early Access to 7th Unit OS</h2>
+            <p>We're onboarding a small number of operators for early deployment. Tell us about your operation.</p>
+            <form class="form" data-formspree="https://formspree.io/f/xjgzorqq" data-success-message="Received. We will respond directly.">
+                <input type="hidden" name="_subject" value="7th Unit OS early access">
+                <input type="hidden" name="intent" value="Install 7th Unit OS">
+                <label class="field"><span class="field__label">Name</span><input class="field__input" name="name" required><span class="field__error" data-error-for="name"></span></label>
+                <label class="field"><span class="field__label">Email</span><input class="field__input" type="email" name="email" required><span class="field__error" data-error-for="email"></span></label>
+                <label class="field"><span class="field__label">Company</span><input class="field__input" name="company" required><span class="field__error" data-error-for="company"></span></label>
+                <label class="field">
+                    <span class="field__label">Fleet size</span>
+                    <select class="field__input" name="fleet_size" required>
+                        <option value="">Select fleet size</option>
+                        <option>1-5 units</option>
+                        <option>6-20 units</option>
+                        <option>20+ units</option>
+                    </select>
+                    <span class="field__error" data-error-for="fleet_size"></span>
+                </label>
+                <div class="form__actions"><p class="form__status" data-status></p><button class="btn" type="submit">Submit <span class="btn__arrow">-&gt;</span></button></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="waitlist-modal" data-waitlist-modal="library-access" hidden>
+        <div class="waitlist-modal__backdrop" data-waitlist-close></div>
+        <div class="waitlist-modal__panel" role="dialog" aria-modal="true" aria-labelledby="library-access-title">
+            <button class="waitlist-modal__close" type="button" data-waitlist-close aria-label="Close popup">Close</button>
+            <h2 id="library-access-title">Join the Skill Library Waitlist</h2>
+            <p>Skills are rolling out to early operators first. Reserve your spot.</p>
+            <form class="form" data-formspree="https://formspree.io/f/xjgzorqq" data-success-message="Received. We will respond directly.">
+                <input type="hidden" name="_subject" value="7th Unit Skill Library waitlist">
+                <input type="hidden" name="intent" value="Browse Skill Library">
+                <label class="field"><span class="field__label">Name</span><input class="field__input" name="name" required><span class="field__error" data-error-for="name"></span></label>
+                <label class="field"><span class="field__label">Email</span><input class="field__input" type="email" name="email" required><span class="field__error" data-error-for="email"></span></label>
+                <label class="field"><span class="field__label">Robot hardware</span><input class="field__input" name="robot_hardware" placeholder="What robot are you running?" required><span class="field__error" data-error-for="robot_hardware"></span></label>
+                <div class="form__actions"><p class="form__status" data-status></p><button class="btn" type="submit">Submit <span class="btn__arrow">-&gt;</span></button></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="waitlist-modal" data-waitlist-modal="sdk-access" hidden>
+        <div class="waitlist-modal__backdrop" data-waitlist-close></div>
+        <div class="waitlist-modal__panel" role="dialog" aria-modal="true" aria-labelledby="sdk-access-title">
+            <button class="waitlist-modal__close" type="button" data-waitlist-close aria-label="Close popup">Close</button>
+            <h2 id="sdk-access-title">Apply for SDK Access</h2>
+            <p>We're working with a small group of developers to build the first skills on the network. Tell us what you want to build.</p>
+            <form class="form" data-formspree="https://formspree.io/f/xjgzorqq" data-success-message="Received. We will respond directly.">
+                <input type="hidden" name="_subject" value="7th Unit SDK access application">
+                <input type="hidden" name="intent" value="Apply to Build">
+                <label class="field"><span class="field__label">Name</span><input class="field__input" name="name" required><span class="field__error" data-error-for="name"></span></label>
+                <label class="field"><span class="field__label">Email</span><input class="field__input" type="email" name="email" required><span class="field__error" data-error-for="email"></span></label>
+                <label class="field"><span class="field__label">What do you want to build?</span><textarea class="field__textarea" name="build_idea" required></textarea><span class="field__error" data-error-for="build_idea"></span></label>
+                <div class="form__actions"><p class="form__status" data-status></p><button class="btn" type="submit">Apply <span class="btn__arrow">-&gt;</span></button></div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
